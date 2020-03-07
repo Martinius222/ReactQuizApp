@@ -1,9 +1,9 @@
 import React from 'react'
 
 const AnswerButton = (props) => (
-  <div>
-    <button onClick={props.clickAnswer} className="btns" disabled={props.hasAnswered} >{props.answerText} </button>
-  </div>
+  
+    <button onClick={props.clickAnswer} className="answer-btns" disabled={props.hasAnswered} >{props.answerText} </button>
+  
 )
 
 export default AnswerButton;

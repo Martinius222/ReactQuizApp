@@ -1,48 +1,58 @@
 const questionList = [
     {
-        question: "What is the capital of Italy?",
-        answers: ["Rome", "Pisa", "Firenze", "Napoli"],
-        correctInt: 0
+        question: "What keyword is used to refer to a PARENT class's variables and methods?",
+        answers: ["this", "super", "final", "extends"],
+        correctInt: 1,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
     },
     {
-        question: "What is the capital of Norway?",
-        answers: ["Trondheim", "Bergen", "Kirkenes", "Oslo"],
-        correctInt: 3
+        question: "What keyword is used to refer to a class' OWN variables and methods?",
+        answers: ["this", "super", "final", "extends"],
+        correctInt: 0,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        question: "What is the capital of the USA?",
-        answers: ["Philadelphia", "Washington DC", "New York", "Los Angeles"],
-        correctInt: 1
+        question: "What does the static keyword do?",
+        answers: ["Prevents variables/methods from changing", "Prevents access to certain variables/methods", "Makes it possible to run code without a main function.", "Makes variables/methods available on the class level"],
+        correctInt: 3,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        question: "What is the capital of Sweden?",
-        answers: ["Karlstad", "Kiruna", "Stockholm", "Haninge"],
-        correctInt: 2
+        question: "What is a CONSTRUCTOR used for?",
+        answers: ["Declaring a new object/class", "Define a connection between two classes", "Get variables out of an object/class", "Building a new instance of an object/class"],
+        correctInt: 3,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        question: "What is the capital of China?",
-        answers: ["Beijing", "Hong Kong", "Wanton", "Shanghai"],
-        correctInt: 0
+        question: "How can you interact with PRIVATE variables/methods?",
+        answers: ["By calling on them anywhere", "By setting them to public", "By using getters and setters", "You can't"],
+        correctInt: 2,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        question: "What is the capital of Ucraine?",
-        answers: ["Chernobyl", "Minsk", "Kiev", "Odessa"],
-        correctInt: 2
+        question: "What's wrong with the variable: public int x = \"55\";",
+        answers: ["Missing variable name", "Wrong datatype given", "Not private", "Missing static keyword"],
+        correctInt: 1,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        question: "What is the capital of Argentina?",
-        answers: ["San Yuan", "Mendosa", "Santa Fe", "Buenos Aires"],
-        correctInt: 3
+        question: "What is: int[ ][ ] a = new int[5][5];",
+        answers: ["An array of integers", "A two-dimensional integer array", "An arraylist limited to 5 inputs", "An invalid array declaration."],
+        correctInt: 1,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        question: "What is the capital of Mexico?",
-        answers: ["Tijuana", "Mexico City", "Guadalajara", "Juárez"],
-        correctInt: 1
+        question: "What keyword is used to prevent a variable/method from changing?",
+        answers: ["this", "super", "final", "extends"],
+        correctInt: 2,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        question: "What is the capital of Canada?",
-        answers: ["Toronto", "Montreal", "Ottawa", "Vancouver"],
-        correctInt: 2
+        question: "What is a PARAMETER?",
+        answers: ["An input variable in methods and constructors", "A type of function/method in Java", "A logical operator in a calculation", "A fancy way of saying \"function\""],
+        correctInt: 1,
+        explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
 
 ];

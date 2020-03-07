@@ -2,9 +2,11 @@ import React from 'react'
 
 
 const NextButton = (props) => (
-  <div>
-    <button onClick={props.clickNext} className="btns" disabled={!props.hasAnswered}>NEXT QUESTION</button>
-  </div>
+  
+    <button onClick={props.clickNext} 
+    className={!props.hasAnswered && !props.isFinished ? "next-btn hidden" : "next-btn" } 
+    disabled={!props.hasAnswered}>NEXT QUESTION</button>
+  
 )
 
 export default NextButton
