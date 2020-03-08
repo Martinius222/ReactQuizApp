@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 
 html {
   height: 100%;
@@ -10,7 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: brown;
+  color: #BBE1FA;
+  background-color: #1B262C;
 }
 
 .main-container {
@@ -31,6 +32,23 @@ body {
   
 }
 
+.flex-col h1 {
+  
+  height: 2em;
+  min-height: 2em;
+  max-height: 2em;
+  margin: 0;
+  
+}
+
+.regular {
+  font-weight: 400
+}
+
+.bold {
+  font-weight: 600;
+}
+
 .flex-row {
   display: flex;
   justify-content: space-around;
@@ -39,6 +57,42 @@ body {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  background-color: #0F4C75;
+  height: 10em;
+  border-bottom: solid 5px #3282B8;
+
+}
+
+.inputBtn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border: none;
+  color: #BBE1FA;
+  background-color: #3282B8;
+  padding: 0.9em;
+}
+
+.startBtn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border: none;
+  color: #BBE1FA;
+  background-color: #3282B8;
+  padding: 0.9em;
+}
+
+.input-field {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border: none;
+  padding: 0.9em;
+  margin-bottom: 2em;
+
 }
 
 .explanation {
@@ -51,22 +105,26 @@ body {
 }
 
 .answer-btns {
+  background-color: #0F4C75;
+  color: #BBE1FA;
   font-family: 'Montserrat', sans-serif;
   height: 6em;
   width: 22em;
   min-width: 11em;
   min-height: 4em;
   border: none;
-  border-bottom: 4px solid grey;
+  border-bottom: 5px solid #3282B8;
   margin: 1em 2em;
 }
 
 .next-btn {
+  background-color: #0F4C75;
+  color: #BBE1FA;
   font-family: 'Montserrat', sans-serif;
   min-width: 11em;
   min-height: 4em;
   border: none;
-  border-bottom: 4px solid grey;
+  border-bottom: 4px solid #3282B8;
   margin: 1em 2em;
 }
 

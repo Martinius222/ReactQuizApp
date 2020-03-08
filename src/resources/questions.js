@@ -51,7 +51,7 @@ const questionList = [
     {
         question: "What is a PARAMETER?",
         answers: ["An input variable in methods and constructors", "A type of function/method in Java", "A logical operator in a calculation", "A fancy way of saying \"function\""],
-        correctInt: 1,
+        correctInt: 0,
         explanation: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
 

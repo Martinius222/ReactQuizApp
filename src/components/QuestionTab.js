@@ -3,6 +3,8 @@ import { getQuestions } from "../resources/questions"
 import AnswerButton from './AnswerButton'
 import NextButton from './NextButton'
 import Explanation from './Explanation';
+import QuestionCount from './QuestionCount';
+import ResultsButton from './ResultsButton';
 
 
 class QuestionTab extends React.Component {
@@ -42,8 +44,10 @@ class QuestionTab extends React.Component {
 
   render() {
     return(
+      
       <div className="flex-col">
-          <h1>{this.state.questions[this.state.questionNumber].question}</h1>
+      <QuestionCount number={this.state.questionNumber + 1} total={this.state.questions.length}/>
+          <h1 className="regular">{this.state.questions[this.state.questionNumber].question}</h1>
           <div className="flex-col explanation">
             {this.state.hasAnswered && <Explanation explanationText={this.state.questions[this.state.questionNumber].explanation}/>}
           </div>
@@ -58,10 +62,8 @@ class QuestionTab extends React.Component {
             />
           ))}
         </div>
-        <NextButton clickNext={this.clickNext} hasAnswered={this.state.hasAnswered} isFinished={this.state.quizIsFinished}/>
-        {/*this.state.hasAnswered && !this.state.quizIsFinished && <NextButton clickNext={this.clickNext} hasAnswered={this.state.hasAnswered}/> */}
-      
-        {this.state.quizIsFinished && <h1>GAME OVER</h1>}
+        {!this.state.quizIsFinished && <NextButton clickNext={this.clickNext} hasAnswered={this.state.hasAnswered} isFinished={this.state.quizIsFinished}/>}
+        {this.state.quizIsFinished && <ResultsButton/>}
       </div>
 
     )
